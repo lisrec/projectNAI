@@ -1,0 +1,9 @@
+@import '../styles/_variables.scss';
+
+.nav-link {
+	cursor: pointer;
+}
+
+.dropdown-toggle::after {
+	display: none !important;
+}

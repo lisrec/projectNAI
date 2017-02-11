@@ -1,0 +1,45 @@
+<div class="jumbotron myJumbotron">
+	<h2>Nasze filmy</h2>
+</div>
+
+<div class="row">
+	<div class="col-md-2 col-lg-1" style="padding-left: 25px;">
+		<h4>Kategorie:</h4>
+		<ul>
+			<li><a [routerLink]="['/list']">Wszystkie</a></li>
+			<li><a [routerLink]="['/list', 'adventure']">adventure</a></li>
+			<li><a [routerLink]="['/list', 'fantasy']">fantasy</a></li>
+			<li><a [routerLink]="['/list', 'comedy']">comedy</a></li>
+			<li><a [routerLink]="['/list', 'sciFi']">sciFi</a></li>
+		</ul>
+	</div>
+	<div class="offset-md-1 offset-lg-1 col-md-8 col-lg-9">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="moviesList">
+					<div class="row headerTable">
+						<div class="col-md-1 col-lg-1">
+							#
+						</div>
+						<div class="col-md-3 col-lg-3">
+							Tytuł
+						</div>
+						<div class="col-md-3 col-lg-3">
+							Kategorie
+						</div>
+						<div class="col-md-2 col-lg-2">
+							Pozostało
+						</div>
+						<div class="col-md-3 col-lg-3">
+							Wypożycz
+						</div>
+					</div>
+
+					<div class="movieRow" *ngFor="let movieRow of movies">
+						<my-movie [movie]="movieRow" (addToCart)="addToCart($event)"></my-movie>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

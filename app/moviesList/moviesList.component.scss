@@ -1,0 +1,21 @@
+.moviesList {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 10px;
+
+	.headerTable {
+		padding-bottom: 5px;
+		border-bottom: solid 1px black;
+		font-weight: bold;
+	}
+	
+	.movieRow {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		border-bottom: solid 1px rgba(0,0,0,0.3);
+	}
+
+	.movieRow:last-child {
+		border: none;
+	}
+}

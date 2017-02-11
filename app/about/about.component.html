@@ -1,0 +1,58 @@
+<div class="jumbotron myJumbotron">
+	<h2>{{about?.name}}</h2>
+</div>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-6 col-xl-5 offset-xl-1">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Dzień</th>
+						<th>Godziny otwarcia</th>
+					</tr>
+				</thead>
+				<tbody *ngIf="about">
+					<tr>
+						<th scope="row">Poniedziałek</th>
+						<td>{{about.hours.monday}}</td>
+					</tr>
+					<tr>
+						<th scope="row">Wtorek</th>
+						<td>{{about.hours.thusday}}</td>
+					</tr>
+					<tr>
+						<th scope="row">Środa</th>
+						<td>{{about.hours.wednesday}}</td>
+					</tr>
+					<tr>
+						<th scope="row">Czwartek</th>
+						<td>{{about.hours.thursday}}</td>
+					</tr>
+					<tr>
+						<th scope="row">Piątek</th>
+						<td>{{about.hours.friday}}</td>
+					</tr>
+					<tr>
+						<th scope="row">Sobota</th>
+						<td>{{about.hours.saturday}}</td>
+					</tr>
+					<tr>
+						<th scope="row">Niedziela</th>
+						<td>{{about.hours.sunday}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<div class="col-md-6">
+    		<address>
+					<strong>{{about?.name}}</strong><br>
+					Umultowska 87<br>
+					61-001 Poznań<br>
+					Tel. (61) 987 65 43
+			</address>
+
+			<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2430.669354170914!2d16.927436815613152!3d52.467015347907285!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4704432587c85ee1%3A0x65573b2a1846a2fa!2sUmultowska+87%2C+Pozna%C5%84!5e0!3m2!1spl!2spl!4v1481577176319" width="90%" height="260px" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+    	</div>
+	</div>
+</div>

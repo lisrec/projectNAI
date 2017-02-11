@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACP,SAAS,EAAE,IAAI;EACf,KAAK,EAAE,GAAG;EACV,OAAO,EAAE,GAAG",
+"sources": ["order.component.scss"],
+"names": [],
+"file": "order.component.css"
+}

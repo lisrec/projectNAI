@@ -1,0 +1,52 @@
+<div class="jumbotron myJumbotron">
+	<h2>Koszyk - zamówienie</h2>
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-7 col-xl-6 offset-xl-1">
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>Nazwa</th>
+						<th>Gatunek</th>
+						<th>Usuń</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr *ngFor="let movie of cart; let i = index">
+						<td>{{movie.name}}</td>
+						<td><span *ngFor="let cat of movie.categoryIds">{{cat}} </span></td>
+						<td><button type="button" class="btn btn-warning" (click)="removeOne(i)">del</button></td>
+					</tr>
+				</tbody>
+			</table>
+			<br>
+			<br>
+			<button type="button" class="btn btn-danger" (click)="removeAll()">Wyczyść koszyk</button>
+		</div>
+		<div class="col-md-5">
+			<form accept-charset="UTF-8" role="form">
+				<fieldset>
+				  	<div class="form-group">
+					    <input [(ngModel)]="orderData.firstName" class="form-control" placeholder="Imię" name="firstName" type="text">
+					</div>
+					<div class="form-group">
+						<input [(ngModel)]="orderData.lastName" class="form-control" placeholder="Nazwisko" name="lastName" type="text">
+					</div>
+					<div class="form-group">      
+						<input [(ngModel)]="orderData.phone" 
+							class="form-control" 
+							placeholder="Telefon" 
+							name="phone" 
+							type="text" 
+							pattern="([0-9]{9})|([0-9]{3}-[0-9]{3}-[0-9]{3})|([0-9]{2} [0-9]{3}-[0-9]{2}-[0-9]{2})">
+					</div>
+					<span *ngIf="error.isErr" class='errmsg'>{{error.msg}}</span>
+					
+					<input (click)="completeOrder()" class="btn btn-success btn-block" type="button" value="Zamów">
+				</fieldset>
+			</form>
+    	</div>
+	</div>
+</div>

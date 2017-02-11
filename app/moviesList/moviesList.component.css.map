@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,WAAY;EACX,WAAW,EAAE,IAAI;EACjB,cAAc,EAAE,IAAI;EACpB,UAAU,EAAE,IAAI;EAEhB,wBAAa;IACZ,cAAc,EAAE,GAAG;IACnB,aAAa,EAAE,eAAe;IAC9B,WAAW,EAAE,IAAI;EAGlB,qBAAU;IACT,WAAW,EAAE,GAAG;IAChB,cAAc,EAAE,GAAG;IACnB,aAAa,EAAE,4BAAyB;EAGzC,gCAAqB;IACpB,MAAM,EAAE,IAAI",
+"sources": ["moviesList.component.scss"],
+"names": [],
+"file": "moviesList.component.css"
+}
