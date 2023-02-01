@@ -1,15 +1,16 @@
-# Projekt na NAI
+# School project (NAI)
 
-##Start aplikacji:
-	* git clone git@github.com:lisrec/projectNAI.git projekt
-	* cd projekt
-	* npm install
-	* npm start
-	
-	* cd server
-	* npm install
-	* node server.js
+- Terminal 1 (UI)
+	```bash
+	npm install
+	npm start
+	```
+- Terminal 2 (server)
+	```bash
+	cd server
+	npm install
+	node server.js
+	```
 
-
-##Autor:
-	* Krzysztof Palka
+## Contributors:
+  - Krzysztof Palka
